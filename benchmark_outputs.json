@@ -1,104 +1,272 @@
 [
   {
     "index_type": "hnsw",
-    "compression": "uncompressed",
-    "object_count": 600000,
-    "memory_usage": 3990.53
-  },
-  {
-    "index_type": "hnsw",
-    "compression": "uncompressed",
-    "object_count": 700000,
-    "memory_usage": 4936.99
-  },
-  {
-    "index_type": "hnsw",
     "compression": "pq",
     "object_count": 100000,
-    "memory_usage": 811.78
+    "memory_usage": 855.78
   },
   {
-    "index_type": "hnsw",
-    "compression": "pq",
-    "object_count": 700000,
-    "memory_usage": 1767.14
-  },
-  {
-    "index_type": "hnsw",
-    "compression": "pq",
-    "object_count": 600000,
-    "memory_usage": 1361.95
-  },
-  {
-    "index_type": "hnsw",
-    "compression": "uncompressed",
-    "object_count": 100000,
-    "memory_usage": 812.58
-  },
-  {
-    "index_type": "hnsw",
-    "compression": "pq",
-    "object_count": 300000,
-    "memory_usage": 715.58
-  },
-  {
-    "index_type": "hnsw",
-    "compression": "pq",
-    "object_count": 200000,
-    "memory_usage": 624.83
-  },
-  {
-    "index_type": "hnsw",
-    "compression": "pq",
-    "object_count": 800000,
-    "memory_usage": 2533.91
-  },
-  {
-    "index_type": "hnsw",
-    "compression": "uncompressed",
-    "object_count": 500000,
-    "memory_usage": 3323.83
-  },
-  {
-    "index_type": "hnsw",
-    "compression": "uncompressed",
+    "index_type": "flat",
+    "compression": "bq",
     "object_count": 400000,
-    "memory_usage": 2572.01
+    "memory_usage": 482.17
+  },
+  {
+    "index_type": "flat",
+    "compression": "uncompressed",
+    "object_count": 100000,
+    "memory_usage": 249.6
+  },
+  {
+    "index_type": "flat",
+    "compression": "bq",
+    "object_count": 500000,
+    "memory_usage": 631.52
   },
   {
     "index_type": "hnsw",
     "compression": "uncompressed",
-    "object_count": 200000,
-    "memory_usage": 1611.02
+    "object_count": 100000,
+    "memory_usage": 747.45
   },
   {
     "index_type": "hnsw",
-    "compression": "uncompressed",
+    "compression": "bq",
     "object_count": 300000,
-    "memory_usage": 1887.81
+    "memory_usage": 654.22
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "bq",
+    "object_count": 200000,
+    "memory_usage": 629.1
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "bq",
+    "object_count": 900000,
+    "memory_usage": 2186.05
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "bq",
+    "object_count": 800000,
+    "memory_usage": 1658.11
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "bq",
+    "object_count": 400000,
+    "memory_usage": 1071.12
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "bq",
+    "object_count": 500000,
+    "memory_usage": 1070.38
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "pq",
+    "object_count": 700000,
+    "memory_usage": 1103.03
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "pq",
+    "object_count": 600000,
+    "memory_usage": 957.67
+  },
+  {
+    "index_type": "flat",
+    "compression": "uncompressed",
+    "object_count": 700000,
+    "memory_usage": 723.78
+  },
+  {
+    "index_type": "flat",
+    "compression": "bq",
+    "object_count": 300000,
+    "memory_usage": 447.12
+  },
+  {
+    "index_type": "flat",
+    "compression": "uncompressed",
+    "object_count": 600000,
+    "memory_usage": 593.68
+  },
+  {
+    "index_type": "flat",
+    "compression": "bq",
+    "object_count": 200000,
+    "memory_usage": 527.34
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "uncompressed",
+    "object_count": 600000,
+    "memory_usage": 3934.43
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "uncompressed",
+    "object_count": 700000,
+    "memory_usage": 4562.76
+  },
+  {
+    "index_type": "flat",
+    "compression": "bq",
+    "object_count": 900000,
+    "memory_usage": 1023.76
+  },
+  {
+    "index_type": "flat",
+    "compression": "bq",
+    "object_count": 800000,
+    "memory_usage": 1035.23
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "bq",
+    "object_count": 100000,
+    "memory_usage": 424.9
+  },
+  {
+    "index_type": "flat",
+    "compression": "uncompressed",
+    "object_count": 900000,
+    "memory_usage": 834.86
+  },
+  {
+    "index_type": "flat",
+    "compression": "uncompressed",
+    "object_count": 800000,
+    "memory_usage": 937.05
   },
   {
     "index_type": "hnsw",
     "compression": "uncompressed",
     "object_count": 800000,
-    "memory_usage": 5566.58
+    "memory_usage": 5656.31
   },
   {
     "index_type": "hnsw",
     "compression": "uncompressed",
     "object_count": 900000,
-    "memory_usage": 5886.19
+    "memory_usage": 6205.14
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "pq",
+    "object_count": 900000,
+    "memory_usage": 1966.79
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "pq",
+    "object_count": 800000,
+    "memory_usage": 1871.64
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "pq",
+    "object_count": 300000,
+    "memory_usage": 835.58
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "pq",
+    "object_count": 200000,
+    "memory_usage": 836.47
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "uncompressed",
+    "object_count": 200000,
+    "memory_usage": 1478.37
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "uncompressed",
+    "object_count": 300000,
+    "memory_usage": 2055.47
+  },
+  {
+    "index_type": "flat",
+    "compression": "bq",
+    "object_count": 700000,
+    "memory_usage": 750.42
+  },
+  {
+    "index_type": "flat",
+    "compression": "uncompressed",
+    "object_count": 300000,
+    "memory_usage": 476.5
+  },
+  {
+    "index_type": "flat",
+    "compression": "bq",
+    "object_count": 600000,
+    "memory_usage": 637.38
+  },
+  {
+    "index_type": "flat",
+    "compression": "uncompressed",
+    "object_count": 200000,
+    "memory_usage": 303.55
   },
   {
     "index_type": "hnsw",
     "compression": "pq",
     "object_count": 400000,
-    "memory_usage": 1045.17
+    "memory_usage": 549.2
   },
   {
     "index_type": "hnsw",
     "compression": "pq",
     "object_count": 500000,
-    "memory_usage": 1226.87
+    "memory_usage": 719.54
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "uncompressed",
+    "object_count": 500000,
+    "memory_usage": 3453.15
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "uncompressed",
+    "object_count": 400000,
+    "memory_usage": 2673.69
+  },
+  {
+    "index_type": "flat",
+    "compression": "uncompressed",
+    "object_count": 400000,
+    "memory_usage": 670.32
+  },
+  {
+    "index_type": "flat",
+    "compression": "bq",
+    "object_count": 100000,
+    "memory_usage": 294.86
+  },
+  {
+    "index_type": "flat",
+    "compression": "uncompressed",
+    "object_count": 500000,
+    "memory_usage": 510.33
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "bq",
+    "object_count": 700000,
+    "memory_usage": 1549.22
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "bq",
+    "object_count": 600000,
+    "memory_usage": 1409.62
   }
 ]

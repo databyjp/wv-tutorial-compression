@@ -39,7 +39,7 @@ def parse_results_text():
             "index_type": fname_split[2],
             "compression": fname_split[3],
             "object_count": int(fname_split[4].split(".")[0]),
-            "memory_usage": mem_usage
+            "memory_usage": mem_usage,
         }
         benchmark_outputs.append(result)
 
@@ -49,3 +49,11 @@ def parse_results_text():
         json.dump(benchmark_outputs, f, indent=2)
 
     return True
+
+
+def restart_weaviate():
+    print("Restarting Weaviate...")
+    subprocess.run("docker-compose down", shell=True, check=True)
+    subprocess.run("docker-compose up -d", shell=True, check=True)
+    print("Sleeping for 5 seconds to let Weaviate spin up...")
+    time.sleep(10)

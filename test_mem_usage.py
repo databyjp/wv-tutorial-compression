@@ -7,7 +7,7 @@ from weaviate.util import generate_uuid5
 import weaviate
 import h5py
 from pathlib import Path
-from utils import measure_mem_usage, parse_results_text
+from utils import measure_mem_usage, parse_results_text, restart_weaviate
 
 
 N_MAX_IMPORT = 1000000
@@ -33,17 +33,34 @@ train_vectors = f["train"]
 
 
 # Connect to Weaviate
-client = weaviate.connect_to_local()
+
 
 for output_prefix, reconfigure_function, vector_index_config in [
     ("hnsw_uncompressed", do_nothing, wc.Configure.VectorIndex.hnsw()),
     ("hnsw_pq", reconfigure_pq, wc.Configure.VectorIndex.hnsw()),
-    ("hnsw_bq", do_nothing, wc.Configure.VectorIndex.hnsw(quantizer=wc.Configure.VectorIndex.Quantizer.bq())),
-    ("flat_bq", do_nothing, wc.Configure.VectorIndex.flat(quantizer=wc.Configure.VectorIndex.Quantizer.bq())),
+    (
+        "hnsw_bq",
+        do_nothing,
+        wc.Configure.VectorIndex.hnsw(
+            quantizer=wc.Configure.VectorIndex.Quantizer.bq()
+        ),
+    ),
+    (
+        "flat_bq",
+        do_nothing,
+        wc.Configure.VectorIndex.flat(
+            quantizer=wc.Configure.VectorIndex.Quantizer.bq()
+        ),
+    ),
     ("flat_uncompressed", do_nothing, wc.Configure.VectorIndex.flat()),
 ]:
-
+    client = weaviate.connect_to_local()
     client.collections.delete(COLL_NAME)
+    client.close()
+
+    restart_weaviate()
+
+    client = weaviate.connect_to_local()
 
     # Create collection
     collection = client.collections.create(
@@ -51,7 +68,7 @@ for output_prefix, reconfigure_function, vector_index_config in [
         properties=[
             wc.Property(name="name", data_type=wc.DataType.TEXT),
         ],
-        vector_index_config=vector_index_config
+        vector_index_config=vector_index_config,
     )
 
     # Add objects
@@ -62,9 +79,7 @@ for output_prefix, reconfigure_function, vector_index_config in [
             padding = "0" * (7 - len(str(real_i)))
             properties = {"name": f"DBPedia_{padding}{real_i}"}
             batch.add_object(
-                properties=properties,
-                uuid=generate_uuid5(real_i),
-                vector=list(vector)
+                properties=properties, uuid=generate_uuid5(real_i), vector=list(vector)
             )
 
             if real_i == 100000:
@@ -75,3 +90,5 @@ for output_prefix, reconfigure_function, vector_index_config in [
 
 
 parse_results_text()
+
+client.close()

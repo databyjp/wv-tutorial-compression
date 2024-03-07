@@ -1,0 +1,51 @@
+File: weaviate
+Type: inuse_space
+Time: Mar 7, 2024 at 12:25pm (CET)
+Showing nodes accounting for 4429.76MB, 97.09% of 4562.76MB total
+Dropped 250 nodes (cum <= 22.81MB)
+      flat  flat%   sum%        cum   cum%
+ 3556.26MB 77.94% 77.94%  3556.26MB 77.94%  github.com/weaviate/weaviate/adapters/repos/db/vector/hnsw/distancer.Normalize (inline)
+  309.08MB  6.77% 84.71%   309.08MB  6.77%  github.com/weaviate/sroar.(*Bitmap).fastExpand
+  224.61MB  4.92% 89.64%   224.61MB  4.92%  github.com/weaviate/weaviate/adapters/repos/db/vector/hnsw.(*vertex).appendConnectionAtLevelNoLock
+   87.54MB  1.92% 91.56%    87.54MB  1.92%  github.com/weaviate/weaviate/entities/storobj.(*Object).MarshalBinary
+   87.01MB  1.91% 93.46%   214.03MB  4.69%  github.com/weaviate/sroar.NewBitmapWith
+   48.50MB  1.06% 94.53%  3875.46MB 84.94%  github.com/weaviate/weaviate/adapters/repos/db/vector/hnsw.(*hnsw).AddBatch
+   42.50MB  0.93% 95.46%   437.59MB  9.59%  github.com/weaviate/weaviate/adapters/repos/db/roaringset.(*BinarySearchNode).insert
+      32MB   0.7% 96.16%       32MB   0.7%  github.com/weaviate/sroar.init
+   24.14MB  0.53% 96.69%    24.14MB  0.53%  github.com/weaviate/weaviate/usecases/byteops.Float32FromByteVector (inline)
+   13.50MB   0.3% 96.98%   251.59MB  5.51%  github.com/weaviate/weaviate/adapters/repos/db/vector/hnsw.(*hnsw).addOne
+       3MB 0.066% 97.05%   229.50MB  5.03%  github.com/weaviate/weaviate/adapters/repos/db/vector/hnsw.(*neighborFinderConnector).doAtLevel
+       1MB 0.022% 97.07%   139.17MB  3.05%  github.com/weaviate/weaviate/adapters/repos/db.(*objectsBatcher).storeSingleBatchInLSM.func1
+    0.62MB 0.014% 97.09%    24.76MB  0.54%  github.com/weaviate/weaviate/adapters/handlers/grpc/v1.batchFromProto
+         0     0% 97.09%   182.06MB  3.99%  github.com/weaviate/sroar.(*Bitmap).Set
+         0     0% 97.09%   182.06MB  3.99%  github.com/weaviate/sroar.(*Bitmap).SetMany (inline)
+         0     0% 97.09%   309.08MB  6.77%  github.com/weaviate/sroar.(*Bitmap).newContainer
+         0     0% 97.09%   214.03MB  4.69%  github.com/weaviate/sroar.NewBitmap (inline)
+         0     0% 97.09%    26.26MB  0.58%  github.com/weaviate/weaviate/adapters/handlers/grpc/v1.(*Service).BatchObjects
+         0     0% 97.09%  3875.46MB 84.94%  github.com/weaviate/weaviate/adapters/repos/db.(*DB).worker
+         0     0% 97.09%       32MB   0.7%  github.com/weaviate/weaviate/adapters/repos/db.(*Shard).addToPropertySetBucket
+         0     0% 97.09%    36.20MB  0.79%  github.com/weaviate/weaviate/adapters/repos/db.(*Shard).addToPropertyValueIndex
+         0     0% 97.09%    33.70MB  0.74%  github.com/weaviate/weaviate/adapters/repos/db.(*Shard).extendInvertedIndicesLSM
+         0     0% 97.09%   142.17MB  3.12%  github.com/weaviate/weaviate/adapters/repos/db.(*Shard).putObjectLSM
+         0     0% 97.09%    95.47MB  2.09%  github.com/weaviate/weaviate/adapters/repos/db.(*Shard).putObjectLSM.func1
+         0     0% 97.09%    45.70MB  1.00%  github.com/weaviate/weaviate/adapters/repos/db.(*Shard).updateInvertedIndexLSM
+         0     0% 97.09%  3875.46MB 84.94%  github.com/weaviate/weaviate/adapters/repos/db.(*Shard).updateVectorIndexIgnoreDelete
+         0     0% 97.09%   140.17MB  3.07%  github.com/weaviate/weaviate/adapters/repos/db.(*objectsBatcher).storeObjectOfBatchInLSM
+         0     0% 97.09%  3875.46MB 84.94%  github.com/weaviate/weaviate/adapters/repos/db.(*objectsBatcher).storeSingleObjectInAdditionalStorage
+         0     0% 97.09%    30.50MB  0.67%  github.com/weaviate/weaviate/adapters/repos/db/lsmkv.(*Bucket).RoaringSetAddOne
+         0     0% 97.09%       42MB  0.92%  github.com/weaviate/weaviate/adapters/repos/db/lsmkv.(*Memtable).roaringSetAddList
+         0     0% 97.09%    30.50MB  0.67%  github.com/weaviate/weaviate/adapters/repos/db/lsmkv.(*Memtable).roaringSetAddOne (inline)
+         0     0% 97.09%    55.51MB  1.22%  github.com/weaviate/weaviate/adapters/repos/db/roaringset.(*BinarySearchTree).Insert
+         0     0% 97.09%   396.09MB  8.68%  github.com/weaviate/weaviate/adapters/repos/db/roaringset.NewBitmap
+         0     0% 97.09%  3875.46MB 84.94%  github.com/weaviate/weaviate/adapters/repos/db/vector/hnsw.(*hnsw).Add
+         0     0% 97.09%   229.50MB  5.03%  github.com/weaviate/weaviate/adapters/repos/db/vector/hnsw.(*hnsw).findAndConnectNeighbors
+         0     0% 97.09%  3556.26MB 77.94%  github.com/weaviate/weaviate/adapters/repos/db/vector/hnsw.(*hnsw).normalizeVec
+         0     0% 97.09%   229.50MB  5.03%  github.com/weaviate/weaviate/adapters/repos/db/vector/hnsw.(*neighborFinderConnector).Do
+         0     0% 97.09%   224.61MB  4.92%  github.com/weaviate/weaviate/adapters/repos/db/vector/hnsw.(*neighborFinderConnector).connectNeighborAtLevel
+         0     0% 97.09%    28.27MB  0.62%  github.com/weaviate/weaviate/grpc/generated/protocol/v1._Weaviate_BatchObjects_Handler
+         0     0% 97.09%    40.16MB  0.88%  google.golang.org/grpc.(*Server).handleStream
+         0     0% 97.09%    40.16MB  0.88%  google.golang.org/grpc.(*Server).processUnaryRPC
+         0     0% 97.09%    40.16MB  0.88%  google.golang.org/grpc.(*Server).serveStreams.func1.1
+         0     0% 97.09%    34.54MB  0.76%  runtime.doInit (inline)
+         0     0% 97.09%    34.54MB  0.76%  runtime.doInit1
+         0     0% 97.09%    46.46MB  1.02%  runtime.main
