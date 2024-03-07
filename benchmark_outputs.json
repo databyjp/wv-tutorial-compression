@@ -1,0 +1,104 @@
+[
+  {
+    "index_type": "hnsw",
+    "compression": "uncompressed",
+    "object_count": 600000,
+    "memory_usage": 3990.53
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "uncompressed",
+    "object_count": 700000,
+    "memory_usage": 4936.99
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "pq",
+    "object_count": 100000,
+    "memory_usage": 811.78
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "pq",
+    "object_count": 700000,
+    "memory_usage": 1767.14
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "pq",
+    "object_count": 600000,
+    "memory_usage": 1361.95
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "uncompressed",
+    "object_count": 100000,
+    "memory_usage": 812.58
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "pq",
+    "object_count": 300000,
+    "memory_usage": 715.58
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "pq",
+    "object_count": 200000,
+    "memory_usage": 624.83
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "pq",
+    "object_count": 800000,
+    "memory_usage": 2533.91
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "uncompressed",
+    "object_count": 500000,
+    "memory_usage": 3323.83
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "uncompressed",
+    "object_count": 400000,
+    "memory_usage": 2572.01
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "uncompressed",
+    "object_count": 200000,
+    "memory_usage": 1611.02
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "uncompressed",
+    "object_count": 300000,
+    "memory_usage": 1887.81
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "uncompressed",
+    "object_count": 800000,
+    "memory_usage": 5566.58
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "uncompressed",
+    "object_count": 900000,
+    "memory_usage": 5886.19
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "pq",
+    "object_count": 400000,
+    "memory_usage": 1045.17
+  },
+  {
+    "index_type": "hnsw",
+    "compression": "pq",
+    "object_count": 500000,
+    "memory_usage": 1226.87
+  }
+]

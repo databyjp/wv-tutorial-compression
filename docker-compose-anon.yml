@@ -11,6 +11,7 @@ services:
     - http
     image: cr.weaviate.io/semitechnologies/weaviate:1.24.1
     ports:
+    - 6060:6060
     - 8080:8080
     - 50051:50051
     restart: on-failure:0
@@ -23,4 +24,5 @@ services:
       ENABLE_MODULES: 'text2vec-cohere,text2vec-huggingface,text2vec-openai,generative-openai,generative-cohere,reranker-cohere,backup-filesystem'
       BACKUP_FILESYSTEM_PATH: '/var/lib/weaviate/backups'
       CLUSTER_HOSTNAME: 'node1'
+      ASYNC_INDEXING: 'false'
 ...
