@@ -3,7 +3,7 @@ import plotly.express as px
 import plotly.io as pio
 
 
-df = pd.read_json("benchmark_outputs.json")
+df = pd.read_json("test_outputs.json")
 df.sort_values(by=["index_type", "compression", "object_count"], inplace=True)
 df = df.assign(index_compression=lambda x: x["index_type"] + "_" + x["compression"])
 print(df.head())

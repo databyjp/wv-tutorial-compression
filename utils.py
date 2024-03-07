@@ -22,7 +22,7 @@ def parse_results_text():
     output_dir = Path("output")
     output_files = output_dir.glob("*.txt")
 
-    benchmark_outputs = list()
+    test_outputs = list()
     for f in output_files:
         print(f"Processing {f}...")
         txt = f.read_text()
@@ -41,12 +41,12 @@ def parse_results_text():
             "object_count": int(fname_split[4].split(".")[0]),
             "memory_usage": mem_usage,
         }
-        benchmark_outputs.append(result)
+        test_outputs.append(result)
 
         print("Done.")
 
-    with open("benchmark_outputs.json", "w") as f:
-        json.dump(benchmark_outputs, f, indent=2)
+    with open("test_outputs.json", "w") as f:
+        json.dump(test_outputs, f, indent=2)
 
     return True
 
