@@ -21,7 +21,7 @@ fig = px.line(
         "object_count": "Object count",
         "index_compression": "Index type & compression",
     },
-    width=800,
+    width=1000,
     height=600,
     markers=True,
 )
